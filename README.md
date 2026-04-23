@@ -1,21 +1,33 @@
-# 🔐 SecurePass
+# 🔐 SecurePass – Cybersecurity Tool
 
-SecurePass is a cybersecurity tool that checks password strength, detects breaches, and generates secure passwords.
+## 🧠 Problem Statement
+Weak passwords are one of the biggest causes of cybersecurity breaches. Many users are unaware of how easily their passwords can be cracked or whether their credentials have already been exposed in data leaks.
 
-## 🚀 Features
-- Password strength analysis
-- Crack time estimation
-- Breach detection (Have I Been Pwned API)
-- Password generator
-- Suggestions to improve passwords
+## 📖 Description
+In today's digital world, users create multiple accounts but often reuse simple and weak passwords. This makes them vulnerable to hacking, brute-force attacks, and credential stuffing. 
 
-## 🛠 How to Run
+Additionally, most users do not know if their passwords have already been leaked in previous data breaches, putting their personal data at risk.
 
-1. Install dependencies:
-   pip install streamlit requests
+There is a need for a simple and effective tool that helps users:
+- Understand password strength
+- Estimate how long it would take to crack a password
+- Check if a password has been exposed in known breaches
+- Get suggestions to improve password security
 
-2. Run the app:
-   streamlit run app.py
+## 💡 Proposed Solution
+SecurePass is a cybersecurity tool that analyzes passwords and provides real-time feedback on their strength and safety.
 
-## 🔒 Security
-Passwords are not stored. Uses secure hashing (k-anonymity).
+The system:
+- Calculates password strength based on complexity
+- Estimates crack time using computational analysis
+- Checks password exposure using a secure API (k-anonymity method)
+- Provides smart suggestions to improve weak passwords
+- Generates strong and secure passwords
+
+This helps users create safer passwords and improve their overall digital security.
+
+## 🛠 Tech Stack (Optional)
+- Python
+- Streamlit
+- Hashlib (SHA-1)
+- Requests API
